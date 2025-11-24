@@ -2,21 +2,48 @@
 <html lang="cs">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="description" content="Blog" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladyslav Prydatko @ VŠB-TUO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="./output.css" rel="stylesheet">
-
-    <title>Vladyslav Prydatko @ VŠB-TUO</Var></title>
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<body class="bg-white font-inter">
+    <div id="header-placeholder"></div>
+
+    <!-- hero -->
+    <section class="min-h-screen flex items-center justify-center bg-white pt-8 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- left side -->
+                <div class="lg:w-1/2 space-y-8">
+                    <div>
+                        <h1 class="text-5xl font-bold mb-4">Vladyslav Prydatko</h1>
+                        <p class="text-xl font-semibold mb-4">Studuji Informatiku na VŠB-TUO</p>
+                    </div>
+                    <div class="flex gap-6 items-center">
+                        <a href="https://github.com/vldpr" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-600 hover:text-blue-700 flex items-center gap-2">
+                            <i class="fab fa-github text-xl"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="flex flex-col items-center">
+                        <img src="https://avatars.githubusercontent.com/u/218990586?v=4" alt="GitHub Avatar" class="w-64 h-64 rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
-›
