@@ -35,3 +35,7 @@
 .nav-link:hover {
     color: #3b82f6;
 }
+
+.fab {
+    transition: all 0.3s ease;
+}
