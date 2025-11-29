@@ -5,58 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekty – Vladyslav Prydatko</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/src/favicon-16x16.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body
-    class="bg-white dark:bg-gray-950 dark:text-gray-100 font-inter text-gray-950 dark:text-gray-100 transition-colors duration-300">
+<body>
     <div id="header-placeholder"></div>
 
-    <main class="py-12">
-        <section class="py-8">
-            <div class="container mx-auto px-4">
-                <button onclick="window.history.back()"
-                    class="mb-6 flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold transition-colors">
-                    <i class="fas fa-arrow-left"></i>
-                    Zpět
-                </button>
-                <div class="text-center">
-                    <h1 class="text-4xl font-bold mb-4">Breakout</h1>
-                    <p class="text-xl mb-4">hra pro kurz ÚPR</p>
+    <main>
+        <button onclick="window.history.back()"
+            class="mb-8 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 dark:text-blue-400 dark:bg-blue-900/20 dark:hover:bg-blue-900/40 rounded-lg transition-colors">
+            <i class="fas fa-arrow-left"></i> Zpět
+        </button>
+
+        <div class="text-center mb-12">
+            <h1>Breakout</h1>
+            <p class="text-xl text-gray-500 dark:text-gray-400">Semestrální projekt pro kurz ÚPR</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start max-w-6xl mx-auto">
+            <div class="bg-gray-200 dark:bg-gray-800 rounded-2xl p-2 shadow-lg">
+                <img src="src/breakout.gif" alt="Breakout Gameplay Demo"
+                    class="w-full h-auto rounded-xl border border-gray-300 dark:border-gray-700">
+            </div>
+
+            <div class="space-y-6">
+                <div
+                    class="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+                    <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                        <i class="fas fa-gamepad text-blue-500"></i> O hře
+                    </h3>
+                    <p>
+                        V této hře hráč ovládá "pádlo", kterým odráží kuličku a snaží se vybít barevné bloky.
+                    </p>
+                    <ul class="space-y-3 mt-4 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span><strong>Cíl:</strong> Odstranit všechny bloky dříve, než dojdou životy.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-skull text-red-500 mt-1"></i>
+                            <span><strong>Prohra:</strong> Pokud míček spadne pod pádlo, hráč ztrácí život.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-arrows-alt-h text-blue-500 mt-1"></i>
+                            <span><strong>Ovládání:</strong> Pohyb pádlem do stran a odpalování míčků.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- hero -->
-            <section
-                class="bg-gray-100 dark:bg-gray-950 min-h-screen flex items-center justify-center bg-white pt-8 pb-20">
-                <div class="container mx-auto px-4">
-                    <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
-                        <!-- left side -->
-                        <div class="lg:w-1/2 space-y-8">
-                            <div>
-                                <img src="src/breakout.gif" alt="Breakout Demo"
-                                    class="w-100 h-100 rounded-2xl shadow-lg">
-                            </div>
-                        </div>
-                        <!-- right side -->
-                        <div class="lg:w-1/2 flex justify-center">
-                            <div class="flex flex-col items-center">
-                                <p class="text-xl">V této hře hráč ovládá "pádlo", kterým odráží kuličku, kterou se
-                                    snaží postupně "vybít" veškeré barevné bloky v horní části obrazovky.<br>Pokud
-                                    kulička spadne pod pádlo, tak hráč ztrácí život (míček). Hráč se může hýbat se svým
-                                    pádlem a odpalovat míčky. - Na začátku nebo po ztrátě míčku hráč vystřelí míček z
-                                    pozice pádla. - Pokud míček vyletí ven dolním okrajem herní plochy, hráč přichází o
-                                    míček.<br>Míček po dotyku s blokem ubere bloku život, pokud bloku dojde život, tak
-                                    blok zmizí.<br>Hráč vyhrává, pokud se mu podaří odstranit všechny bloky dříve, než
-                                    mu dojdou všechny míčky/životy.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
+        </div>
     </main>
 
     <div id="footer-placeholder"></div>

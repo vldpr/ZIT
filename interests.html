@@ -5,42 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zájmy - Vladyslav Prydatko</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/src/favicon-16x16.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body
-    class="bg-white dark:bg-gray-950 text-gray-950 dark:text-gray-100 font-inter dark:text-gray-100 text-gray-950 dark:text-gray-200 font-inter transition-colors duration-300">
+<body>
     <div id="header-placeholder"></div>
-    <main class="py-12">
-        <section class="py-8">
-            <div class="container mx-auto px-4">
-                <button onclick="window.history.back()"
-                    class="mb-6 flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-semibold transition-colors">
-                    <i class="fas fa-arrow-left"></i>
-                    Zpět
-                </button>
-                <div class="text-center">
-                    <h1 class="text-4xl font-bold mb-4">Moje zájmy</h1>
-                </div>
-                <div class="text-2xl font-bold italic mb-4">🚀 Technologie</div>
-                <p class="text-xl">Od mala mě vždycky bavily různé technologie, počítače, moderní auta,
-                    vesmír atd. Dneska sleduju spoustu věcí, jako jsou lety SpaceX, vozidla s autopilotem (Tesla), nové
-                    programovací jazyky, nástroje a platformy. Často tak projíždím Hacker News nebo Lobste.rs.</p>
-                <div class="text-2xl font-bold italic p-4 mb-4">🎹 Hudba</div>
-                <p class="text-xl">Mám ukončené studium hudební školy v oboru klavír. I když tak často nehraju a nikdy
-                    jsem nemyslel, že bych právě s hudbou a vystupováním spojil svoji kariéru, vždycky mě to bavilo. Rád
-                    poslouchám jak klasickou hudbu, tak i současné interprety vážné hudby, jako je Ludovico Einaudi nebo
-                    Franz Gordon. S tím si rád poslechnu i něco modernějšího – americké indie, hlavně Lanu Del Rey,
-                    německý gotický rock, jako Unheilig i ASP, anebo rap s prvky metalu, jako BONES, REDZED.
-                </p>
-            </div>
-        </section>
+
+    <main>
+        <div class="max-w-3xl mx-auto">
+            <button onclick="window.history.back()"
+                class="mb-8 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 dark:text-blue-400 dark:bg-blue-900/20 dark:hover:bg-blue-900/40 rounded-lg transition-colors">
+                <i class="fas fa-arrow-left"></i> Zpět
+            </button>
+
+            <header class="mb-12 border-b border-gray-200 dark:border-gray-800 pb-6">
+                <h1 class="text-center md:text-left">Moje zájmy</h1>
+            </header>
+
+            <section class="space-y-12">
+                <article>
+                    <div class="flex items-center gap-3 mb-4 text-blue-600 dark:text-blue-400">
+                        <i class="fas fa-rocket text-2xl"></i>
+                        <h2 class="!mt-0 !mb-0">Technologie</h2>
+                    </div>
+                    <p>
+                        Od mala mě vždycky bavily různé technologie, počítače, moderní auta a vesmír.
+                        Dnes sleduju spoustu věcí, jako jsou lety <a href="https://www.youtube.com/spacex"
+                            class="link-animated">SpaceX</a>, autonomní vozidla <a
+                            href="https://www.tesla.com/cs_cz/events" class="link-animated">Tesla</a>, <a
+                            href="https://x.com/comma_ai" class="link-animated">comma.ai</a> apod. (doporučuji český
+                        kanál v angličtině <a href="https://youtu.be/tDDGzHtKXVg" class="link-animated">robot*irl</a>).
+                        <br>Nové programovací jazyky, nastroje, techonologické diskuze a názory, takže pravidelně
+                        sleduji <a href="https://news.ycombinator.com" class="link-animated">Hacker News</a> a <a
+                            href="https://lobste.rs" class="link-animated">Lobste.rs</a>.
+                    </p>
+                </article>
+
+                <article>
+                    <div class="flex items-center gap-3 mb-4 text-purple-600 dark:text-purple-400">
+                        <i class="fas fa-music text-2xl"></i>
+                        <h2 class="!mt-0 !mb-0">Hudba</h2>
+                    </div>
+                    <p>
+                        Mám ukončené studium hudební školy v oboru <em>klavír</em>. I když tak často nehraju a nikdy
+                        jsem
+                        nemyslel, že bych právě s hudbou a vystupováním spojil svoji kariéru, vždycky mě to bavilo.
+                        <br>Rád
+                        poslouchám jak klasickou hudbu (<a href="https://youtu.be/vRDcDGFThj4"
+                            class="link-animated">Dvořák</a>, <a href="https://youtu.be/qVA1ieo9Js4"
+                            class="link-animated">Čajkovskij</a>, <a href="https://youtu.be/erXG9vnN-GI"
+                            class="link-animated">Bach</a>), tak i současné interprety vážné
+                        hudby, jako je <a href="https://ludovicoeinaudi.com" class="link-animated">Ludovico Einaudi</a>
+                        anebo <a href="https://open.spotify.com/artist/6c9mrV72IOeJ5imCUK281g"
+                            class="link-animated">Franz Gordon</a>.
+                    </p>
+                    <div class="mb-4 p-4">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/5mrxUVYEyowgATPU35aZay?utm_source=generator&theme=0"
+                            width="100%" height="152" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+
+                    <p>S tím si rád poslechnu i něco modernějšího – americké indie (<a href="https://www.lanadelrey.com"
+                            class="link-animated">Lana Del Rey</a>):</p>
+
+                    <div class="mb-4 p-4">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/4RyK6N4IQ85xxLgguQAFH5?utm_source=generator&theme=0"
+                            width="100%" height="152" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+
+                    <p>německý rock (<a href="https://www.unheilig.com" class="link-animated">Unheilig</a>, <a
+                            href="https://open.spotify.com/artist/7cWnPCnFKYKg5W0JKaf118" class="link-animated">ASP</a>)
+                    </p>
+
+                    <div class="mb-4 p-4">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/5bbp9hWxouON0XZDL565rB?utm_source=generator&theme=0"
+                            width="100%" height="152" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+
+                    <p>nebo rap s prvky metalu (<a href="https://open.spotify.com/artist/5v2WhpA59TJSdPh7LCx1lN"
+                            class="link-animated">BONES</a>).</p>
+                    <div class="mb-4 p-4">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/0YkXRZcetpqI3VzjE9Sey6?utm_source=generator"
+                            width="100%" height="152" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </article>
+                <article>
+                    <p>I když momentálně nemám hustý foťak, rad fotografuji!</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+                        <div class="w-full">
+                            <img src="src/1.jpeg"
+                                class="rounded-lg shadow-lg object-cover hover:shadow-xl transition-shadow duration-300">
+                        </div>
+                        <div class="w-full">
+                            <img src="src/2.jpeg"
+                                class="rounded-lg shadow-lg object-cover hover:shadow-xl transition-shadow duration-300">
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
     </main>
 
     <div id="footer-placeholder"></div>
-
     <script src="script.js"></script>
 </body>
 

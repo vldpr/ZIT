@@ -5,45 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vladyslav Prydatko @ VŠB-TUO</title>
-    <link rel="icon" type="image/x-icon" href="src/penger_favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/src/favicon-16x16.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="bg-gray-100 dark:bg-gray-950 text-gray-950 dark:text-gray-100 ">
+<body>
     <div id="header-placeholder"></div>
 
-    <!-- hero -->
-    <section class="bg-gray-100 dark:bg-gray-950 min-h-screen flex items-center justify-center bg-white pt-8 pb-20">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
-                <!-- left side -->
-                <div class="lg:w-1/2 space-y-8">
-                    <div>
-                        <h1 class="text-5xl font-bold mb-2">Vladyslav Prydatko</h1>
-                        <p class="text-xl mb-4">studuji Informatiku na VŠB-TUO</p>
-                    </div>
-                    <div class="flex gap-6 items-center">
-                        <a href="https://github.com/vldpr" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-blue-600 dark:hover:text-blue-500 flex items-center gap-2">
-                            <i class="fab fa-github text-5xl"></i>
-                        </a>
-                    </div>
+    <main class="flex items-center justify-center min-h-[80vh]">
+        <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 w-full max-w-5xl">
+            <div class="lg:w-1/2 text-center lg:text-left space-y-6">
+                <div>
+                    <h1 class="mb-4 text-gray-900 dark:text-white">Vladyslav Prydatko</h1>
+                    <p class="text-gray-600 dark:text-gray-400 font-light">
+                        student Informatiky na <a href="https://fei.vsb.cz" class="fei">FEI</a> <a href="https://www.vsb.cz/cs/" class="font-semibold">VŠB-TUO</a>
+                    </p>
                 </div>
-                <!-- right side -->
-                <div class="lg:w-1/2 flex justify-center">
-                    <div class="flex flex-col items-center">
-                        <img src="https://avatars.githubusercontent.com/u/218990586?v=4" alt="GitHub Avatar"
-                            class="rounded-2xl shadow-lg">
+                <div class="flex gap-6 justify-center lg:justify-start">
+                    <a href="https://github.com/vldpr" target="_blank" rel="noopener noreferrer"
+                        class="transform hover:scale-110 transition-transform duration-200 text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white">
+                        <i class="fab fa-github text-6xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 shadow-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
                     </div>
+                    <img src="https://avatars.githubusercontent.com/u/218990586?v=4" alt="Vladyslav Prydatko"
+                        class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-2xl">
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <div id="footer-placeholder"></div>
-
     <script src="script.js"></script>
 </body>
 
