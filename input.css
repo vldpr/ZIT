@@ -1,10 +1,11 @@
-@import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;900&display=swap');
+
+@import "tailwindcss";
 
 @layer base {
     html {
         font-family: Inter, system-ui, sans-serif;
+        scrollbar-gutter: stable; 
     }
 }
 
@@ -12,7 +13,6 @@
     position: relative;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
-    font-weight: 500;
 }
 
 .nav-link::after {
@@ -22,8 +22,8 @@
     height: 2px;
     bottom: 0;
     left: 50%;
-    background: #2563eb;
     transition: all 0.3s ease;
+    color: white;
     transform: translateX(-50%);
     border-radius: 2px;
 }
@@ -33,9 +33,6 @@
 }
 
 .nav-link:hover {
-    color: #3b82f6;
+    color: white;
 }
 
-.fab {
-    transition: all 0.3s ease;
-}

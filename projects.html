@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="bg-white dark:bg-gray-950 dark:text-gray-100 font-inter transition-colors duration-300">
+<body
+    class="bg-white dark:bg-gray-950 dark:text-gray-100 font-inter text-gray-950 dark:text-gray-100 transition-colors duration-300">
     <div id="header-placeholder"></div>
 
     <main class="py-12">
@@ -22,10 +23,39 @@
                     Zpět
                 </button>
                 <div class="text-center">
-                    <h1 class="text-4xl font-bold mb-2">Breakout</h1>
-                    <p class="text-xl mb-4 text-gray-950 dark:text-gray-200">hra pro kurz ÚPR</p>
+                    <h1 class="text-4xl font-bold mb-4">Breakout</h1>
+                    <p class="text-xl mb-4">hra pro kurz ÚPR</p>
                 </div>
             </div>
+            <!-- hero -->
+            <section
+                class="bg-gray-100 dark:bg-gray-950 min-h-screen flex items-center justify-center bg-white pt-8 pb-20">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                        <!-- left side -->
+                        <div class="lg:w-1/2 space-y-8">
+                            <div>
+                                <img src="src/breakout.gif" alt="Breakout Demo"
+                                    class="w-100 h-100 rounded-2xl shadow-lg">
+                            </div>
+                        </div>
+                        <!-- right side -->
+                        <div class="lg:w-1/2 flex justify-center">
+                            <div class="flex flex-col items-center">
+                                <p class="text-xl">V této hře hráč ovládá "pádlo", kterým odráží kuličku, kterou se
+                                    snaží postupně "vybít" veškeré barevné bloky v horní části obrazovky.<br>Pokud
+                                    kulička spadne pod pádlo, tak hráč ztrácí život (míček). Hráč se může hýbat se svým
+                                    pádlem a odpalovat míčky. - Na začátku nebo po ztrátě míčku hráč vystřelí míček z
+                                    pozice pádla. - Pokud míček vyletí ven dolním okrajem herní plochy, hráč přichází o
+                                    míček.<br>Míček po dotyku s blokem ubere bloku život, pokud bloku dojde život, tak
+                                    blok zmizí.<br>Hráč vyhrává, pokud se mu podaří odstranit všechny bloky dříve, než
+                                    mu dojdou všechny míčky/životy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
