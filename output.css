@@ -861,7 +861,6 @@
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
-    scrollbar-gutter: stable;
     scroll-behavior: smooth;
   }
   body {
@@ -881,6 +880,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-y: scroll;
   }
   h1 {
     margin-bottom: calc(var(--spacing) * 6);
